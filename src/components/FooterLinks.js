@@ -1,5 +1,5 @@
 //import { BrowserRouter as Router } from "react-router-dom"
-
+import '../app.css'
 
 export default function FooterLinks({ link1, link2, link3 }){
     return (

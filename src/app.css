@@ -48,10 +48,10 @@ a:active.logo {
   font-weight: bold;
 }
 
-a:link.footer_links,
-a:visited.footer_links,
-a:hover.footer_links,
-a:active.footer_links {
+a:link.footer_link,
+a:visited.footer_link,
+a:hover.footer_link,
+a:active.footer_link {
   color: #f0eeed;
 }
 
