@@ -845,12 +845,10 @@ a:active.logo {
     }
   
     .contact_input {
-      width: 280px;
+      width: 275px;
     }
 
     .left {
       @include flexDisplay(column, flex-start, flex-start);
     }    
-      
-    
   }
