@@ -8,6 +8,7 @@ export default function SkillsBar() {
                 <div className="skills_span">                
                     <span className="html">HTML5</span>
                     <span className="css">CSS3</span>
+                    <span className="css">SASS</span>
                     <span className="css">ES6</span>
                     <span className="flexbox">FlexBox</span> 
                     <span className="typescript">TypeScript</span> 
@@ -46,10 +47,9 @@ export default function SkillsBar() {
             </div>
 
             <div className="skills_button_section">
-            <h2>CI/CD & Testing</h2>
+            <h2>Testing & CI/CD</h2>
             <div className="skills_span">                
                 <span className="github">gitHub</span>
-                <span className="jasmine">Jasmine</span>
                 <span className="jest">Jest</span>
             </div>     
             </div>            

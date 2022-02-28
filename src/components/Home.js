@@ -12,7 +12,7 @@ import Contact from './Contact'
 import FooterLogo from './FooterLogo'
 import FooterLinks from './FooterLinks'
 
-import '../app.css'
+
 
 export default function Home(){  //use can only use hooks in function components
 	const [menuToggle, setMenuToggle] = useState(false)
