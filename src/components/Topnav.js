@@ -11,8 +11,8 @@ export default function Topnav({ menuToggle, setMenuToggle }){
 
                 <div className="left">
                     <a href="#Home" className="logo">taley</a>
-                    <Phone className="materials_icon" /><span>347.620.2292</span>   
-                    <Email className="materials_icon" /><span>techtaley@gmail.com</span>                                     
+                    <Phone className="materials_icon phone" /><span>347.620.2292</span>   
+                    <Email className="materials_icon emil" /><span>techtaley@gmail.com</span>                                     
                 </div> 
 
                 <div className="right">

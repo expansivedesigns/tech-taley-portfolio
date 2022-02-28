@@ -1,0 +1,108 @@
+//color
+$whiteColor: #ffffff;
+$creamColor: #f0eeed;
+$orangeColor: #CC5500;
+$greyColor: rgba(255, 255, 255, 0.45);
+$darkGreyColor: #333;
+$lightGreyColor: #999;
+$mediumGreyColor: #666;
+$blackColor: rgba(0, 0, 0, 0.75);
+
+//font
+$font40: 40px;
+$font35: 35px;
+$font30: 30px;
+$font25: 25px;
+$font20: 20px;
+
+//font-family
+$barlow: 'Barlow', sans-serif;
+$tangerine: 'Tangerine', cursive;
+
+@mixin perfectCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//type none if no value needed
+@mixin flexDisplay($direction, $justifyContent, $alignItems){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+}
+
+
+//used on sections
+@mixin flexRowCenter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+//used on .card, contact form
+@mixin flexColumnCenterItemsCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+// @mixin flexRowCenterIndTop {
+//     display: flex;
+//     flex-direction: row;
+//     align-items: flex-start;
+// }
+
+// @mixin flexRowCenterIndBottom {
+//     display: flex;
+//     flex-direction: row;
+//     align-items: flex-end;
+// }
+
+// @mixin flexRowCenterAllRight {
+//     display: flex;
+//     flex-direction: row;
+//     align-content: flex-end;
+// }
+
+// @mixin flexRowCenterAllLeft {
+//     display: flex;
+//     flex-direction: row;
+//     align-contents: front-start ;
+// }
+
+// @mixin flexColumnCenter {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;    
+// }
+
+
+// @mixin flexColumnCenterRowCenter {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: flex-start;    
+// }
+
+// @mixin flexColumnSpaceBetween {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;    
+// }
+
+
+// //??
+// @mixin flexRowCenterColumnCenter {
+//     display: flex;
+//     flex-direction: row;
+//     align-items: center;
+// }
+
+
+
+
+
+
+
