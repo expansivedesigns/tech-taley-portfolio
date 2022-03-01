@@ -42,7 +42,7 @@ body {
   font-weight: bold;
   position: fixed;
   top: 0;
-  z-index: 3;
+  z-index: 99;
   background-color: $greyColor;
 }
 
@@ -168,7 +168,7 @@ svg.materials_icon {
       font-size: 28px;
       margin-top: 5px;
 
-      .ityped-cursor{
+      .ityped-cursor {
         animation: blink 1s infinite;
       }
     }
@@ -272,7 +272,7 @@ svg.materials_icon {
     @include flexDisplay(column, none, center);
     text-align: center;
     background-color: transparent;
-    z-index: -1;
+    z-index: 1;
   }
   
   .card >* {
@@ -377,6 +377,7 @@ svg.materials_icon {
     flex-wrap: wrap;
     justify-content: center;
     width: 90%;
+    z-index: -1;
   }
   
   .skill_list{
@@ -660,11 +661,7 @@ svg.materials_icon {
         
         .banner-btn {
           font-size: 16px;
-        }
-      
-        .banner-string {
-          z-index: 0;
-        }        
+        }      
       }
     }
 
@@ -689,8 +686,8 @@ svg.materials_icon {
       font-size: 16px;
     } 
   
-  .project_desc { 
-      font-size: 14px;
+    .project_desc { 
+        font-size: 14px;
     }
     
     .contact_btn {
