@@ -34,64 +34,58 @@ body {
   }  
 }
 
+//topnav
+.topnav {
+  width: 100%;
+  height: 55px;
+  color: $orangeColor;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  background-color: $greyColor;
+}
+
+svg.materials_icon {
+  margin-left: 30px;
+}
 
 .topwrapper {
-  display: flex;  
+  @include flexDisplay(row, space-between, center);
   padding: 2px 30px;
-  align-items: center;
-  justify-content: space-between;
-}
 
-a:link.logo,
-a:visited.logo,
-a:hover.logo,
-a:active.logo {
-  color: $orangeColor;
-  font-size: 40px;
-  font-weight: bold;
-}
-
-
-
-  //topnav
-.topnav {
-    width: 100%;
-    height: 55px;
-    color: $orangeColor;
-    font-weight: bold;
-    position: fixed;
-    top: 0;
-    z-index: 3;
-    background-color: $greyColor;
-  }
-  
   .left {
     color: $orangeColor;  
     display: flex;
     align-items: center;
-  }
-  
-  svg.materials_icon {
-    margin-left: 30px;
-  }
-  
-  .hamburger {
-    width: 28px;
-    height: 21px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
-  }
-  
-  .line {
-    width: 100%;
-    height: 3px;
-    background-color: $orangeColor; 
-    transform-origin: left;
-    transition: all 2s ease;
-  }
 
+    a:link.logo,
+    a:visited.logo,
+    a:hover.logo,
+    a:active.logo {
+      color: $orangeColor;
+      font-size: 40px;
+      font-weight: bold;
+    }    
+  }
+  
+  .right {
+    .hamburger {
+      width: 28px;
+      height: 21px;
+      @include flexDisplay(column, space-between, center);
+      cursor: pointer;
+  
+      .line {
+        width: 100%;
+        height: 3px;
+        background-color: $orangeColor; 
+        transform-origin: left;
+        transition: all 2s ease;
+      }      
+    }
+  }   
+}
   
 .menu {
     width: 250px;
@@ -103,6 +97,7 @@ a:active.logo {
     z-index: 0;
     height: 100vh;
     right: -250px;
+    padding-top: 10%;
 
     .menu_link {
       padding: 3px 20px;
@@ -206,6 +201,7 @@ a:active.logo {
   }
 } 
   
+//start here
   
   @keyframes blink {
     50% {
