@@ -89,7 +89,7 @@ svg.materials_icon {
   
 .menu {
     width: 250px;
-    @include flexDisplay(column, center, center);
+    @include flexDisplay(column, flex-start, center);
     font-size: 25px;
     background-color: $greyColor;
     position: fixed;
@@ -272,6 +272,7 @@ svg.materials_icon {
     @include flexDisplay(column, none, center);
     text-align: center;
     background-color: transparent;
+    z-index: -1;
   }
   
   .card >* {
@@ -315,7 +316,6 @@ svg.materials_icon {
   }
   
   /* end of updated skills */
-  
   
   .skills_button_section {
       margin: 40px 0;
