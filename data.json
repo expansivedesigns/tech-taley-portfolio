@@ -62,7 +62,7 @@
 				"title": "Be Found",	
 				"desc": "React App | REST API deployed to Heroku",
 				"link": "https://expansivedesigns.com/projects/befound/",
-				"code": "https://github.com/expansivedesigns/webdata-api",
+				"code": "https://github.com/expansivedesigns/befound",
 				"api": "https://webdata-api.herokuapp.com/",
 				"status": "In process",
 				"category": "business"								
