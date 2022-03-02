@@ -115,6 +115,7 @@ svg.materials_icon {
   /* applies to .active right menu only */
   .active.menu {
     background-color: $blackColor;
+    z-index: 2;
   }
   
   .active .line:first-child {
@@ -377,7 +378,6 @@ svg.materials_icon {
     flex-wrap: wrap;
     justify-content: center;
     width: 90%;
-    z-index: -1;
   }
   
   .skill_list{
