@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/tech-taley-portfolio/static/css/main.02db1f72.chunk.css",
-    "main.js": "/tech-taley-portfolio/static/js/main.69130af7.chunk.js",
-    "main.js.map": "/tech-taley-portfolio/static/js/main.69130af7.chunk.js.map",
+    "main.js": "/tech-taley-portfolio/static/js/main.46750bbc.chunk.js",
+    "main.js.map": "/tech-taley-portfolio/static/js/main.46750bbc.chunk.js.map",
     "runtime-main.js": "/tech-taley-portfolio/static/js/runtime-main.bd7aa6af.js",
     "runtime-main.js.map": "/tech-taley-portfolio/static/js/runtime-main.bd7aa6af.js.map",
     "static/js/2.5e83d917.chunk.js": "/tech-taley-portfolio/static/js/2.5e83d917.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.bd7aa6af.js",
     "static/js/2.5e83d917.chunk.js",
     "static/css/main.02db1f72.chunk.css",
-    "static/js/main.69130af7.chunk.js"
+    "static/js/main.46750bbc.chunk.js"
   ]
 }
