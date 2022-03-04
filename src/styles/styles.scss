@@ -42,7 +42,7 @@ body {
   font-weight: bold;
   position: fixed;
   top: 0;
-  z-index: 99;
+  z-index: 3;
   background-color: $greyColor;
 }
 
@@ -625,7 +625,7 @@ svg.materials_icon {
       color: $orangeColor;
       position: fixed;
       top: 0;
-      z-index: 1;
+      z-index: 3;
       background-color: $greyColor;
     }
   
@@ -827,6 +827,10 @@ svg.materials_icon {
     .topnav {
         height: auto;
         padding-bottom: 2%;
+    }
+
+    .menu {
+      padding-top: 25%;
     }
   
     svg.materials_icon {

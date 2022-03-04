@@ -1,33 +1,33 @@
 import {useState, useEffect} from 'react'
 import ProjectMenu from './ProjectMenu'
-import ProjectCard from './ProjectCard'	
+import ProjectCard from './ProjectCard'
 
 export default function Projects(){
     const [projects, setProjects] = useState([]) //ProjectCard - populate each card
     const [selected, setSelected] = useState("all")	//ProjectMenu - selected from menu - initial "all"
-
-    const items = [
-        {
-           id: "all",
-           title: "All"
-       },
-       {
-           id: "blog",
-           title: "Blog"
-       },
-       {
-           id: "search",
-           title: "Search"
-       },                        
-       {
-           id: "game",
-           title: "Game"
-       },
-       {
-           id: "business",
-           title: "Business"
-       }        
-    ]
+    
+	const items = [
+		{
+		   id: "all",
+		   title: "All"
+	   },
+	   {
+		   id: "blog",
+		   title: "Blog"
+	   },
+	   {
+		   id: "search",
+		   title: "Search"
+	   },                        
+	   {
+		   id: "game",
+		   title: "Game"
+	   },
+	   {
+		   id: "business",
+		   title: "Business"
+	   }        
+   ]	
 
     useEffect(() => {
 		async function fetchData(){
@@ -38,10 +38,12 @@ export default function Projects(){
                 setProjects(data.results.projects)
 
                 if(selected === "all"){
-                    setProjects(data.results.projects.filter(p => p.category))
+                    //alert("all")
+                    setProjects(data.results.projects.filter((p) => p.category))
                 } else {
+                    //alert(selected)
                     setProjects(data.results.projects.filter(p => p.category === selected))
-                }
+                }  
 			} catch(err){
 				console.log("Issue loading images", err)
 			}
@@ -59,7 +61,7 @@ export default function Projects(){
                         title={item.title}
                         active={selected === item.id}
                         setSelected={setSelected}
-                        id={item.id}
+                        id={item.id} 
                     />
                 )}
             </div>
